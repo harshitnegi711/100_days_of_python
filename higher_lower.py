@@ -337,7 +337,7 @@ while ans is True:
     b = random.choice(data)
     choise=input(f'choose A = {a.get("name")} a {a.get("description")} {vs} B ={b.get("name")} a {b.get("description")}  :')
     if choise=="a":
-        x = a.get("follower_count")
+        x = a["follower_count"]  # this will also work  
         y = b.get("follower_count")
     elif choise=="b":
         y = a.get("follower_count")
